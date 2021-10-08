@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<string.h>
+void main()
+{
+     char d[20];
+     int l,i;
+     printf("Enter a string\n");
+     gets(d);
+    //  strlwr(d);
+     for(l=0;d[l]!='\0';l++);  //l=strlen(d);
+
+     for(i=0;i<l/2;i++)
+     {
+         if(d[i]!=d[l-1-i])
+         {
+             printf("Not a Palindrome");
+             break;
+         }
+
+     }
+     if(i==l/2)
+     printf("Palindrome");
+     puts("\n");
+
+     printf("The reversed form is:");
+     strrev(d);
+     puts(d);
