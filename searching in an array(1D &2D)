@@ -1,0 +1,71 @@
+#include <stdio.h>
+
+void main()
+{
+    // searching an element in an 1D array.
+
+
+    int d[10]={89,56,5,45,25,32,20,10,36,31},search,flag=0,i;
+
+    printf("Enter the number you want to search\n");
+    scanf("%d",&search);
+
+    for(i=0;i<10;i++)
+    {
+        if(search==d[i])
+    {
+        flag=1;
+        printf("Number Found at %dth position",i+1);
+        break;
+        
+    }
+    }
+    if(flag==0)
+    printf("Number NOT Found");
+
+    
+    
+
+
+    
+
+    // searching an element in a 2D array
+    int array[3][2], j, i, searching_Number, flag = 0;
+    puts("Enter the elements of your array of size 3x2\n");
+    for (i = 0; i <= 2; i++)
+    {
+        for (j = 0; j <= 1; j++)
+        {
+            scanf("%d", &array[i][j]);
+        }
+    }
+    puts("The array elements are:");
+    for (i = 0; i <= 2; i++)
+    {
+        for (j = 0; j <= 1; j++)
+
+        {
+            printf("%d\t", array[i][j]);
+        }
+        printf("\n");
+    }
+    puts("Enter the number you want to search from the above array");
+
+    scanf("%d", &searching_Number);
+    for (i = 0; i <= 2; i++)
+    {
+        for (j = 0; j <= 1; j++)
+        {
+            if (searching_Number == array[i][j])
+            {
+                flag = 1;
+
+            printf("Number FOUND at [%d][%d]position", i + 1, j + 1);
+            break;
+            }
+        }
+    }
+
+    if (flag == 0)
+        printf("Sorry,Number NOT FOUND");
+}
