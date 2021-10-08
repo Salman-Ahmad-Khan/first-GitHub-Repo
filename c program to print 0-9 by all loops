@@ -1,0 +1,41 @@
+/*c program to print 0-9 by all loops*/
+#include<stdio.h>
+void main()
+{
+
+
+//using for loop
+{
+int i;
+for(i=0;i<=9;i++)
+{
+    printf(" %i",i);
+}
+}
+
+printf("\n");
+//using while loop
+{
+int i=0;
+while(i<=9)
+{
+    printf(" %i",i);
+    i=i+1;
+}
+
+}
+printf("\n");
+//using do while loop
+{
+int i=0;
+do 
+{
+    printf(" %i",i);
+    i=i+1;
+}while(i<=9);
+
+}
+
+
+
+}
