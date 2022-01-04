@@ -1,0 +1,27 @@
+#include <stdio.h>
+void main()
+{
+    //using for loop
+
+    for (int i = 1; i <= 5; i++)
+    {
+        printf("  Salman");
+    }
+
+      //using while loop
+
+    int i=1;
+    while ( i<=5)
+    {
+        printf("  Salman");
+        i++;
+    }
+
+     // using do while loop
+
+    int i=1;
+    do
+    {
+        printf(" Salman");
+        i++;
+    } while (i<=5);

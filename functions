@@ -1,0 +1,27 @@
+// #include <stdio.h>
+// void main()
+
+// {
+//   Add();     //function call
+//   EvenOdd(); //function call
+//   Add();     //function call
+// }
+// Add() //function definition from line 9-16
+// {
+//   int a, b, c;
+//   puts("Enter two numbers\n");
+//   scanf("%d%d", &a, &b);
+//   c = a + b;
+//   printf("sum is %d\n", c);
+// }
+
+// EvenOdd() //function definition from line 18-27
+// {
+//   int e;
+//   puts("Enter a number");
+//   scanf("%d", &e);
+//   if (e % 2 == 0)
+//     printf("%d is even", e);
+//   else
+//     printf("%d is odd", e);
+// }
